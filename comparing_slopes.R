@@ -10,6 +10,7 @@ data1<- data.frame(
   y = c(y1, y2),
   group = factor(c(rep("A", length(x1)), rep("B", length(x2))))
 )
+writexl::write_xlsx(data1, "data1.xlsx")
 
 x1 <- c(3,4,5,6,8,9,10,11,12,14,15,16,17)
 y1 <- c(1.4,1.5,2.2,2.4,3.1,3.2,3.2,3.9,4.1,4.7,4.5,5.2,5)
@@ -21,6 +22,8 @@ data2<- data.frame(
   y = c(y1, y2),
   group = factor(c(rep("A", length(x1)), rep("B", length(x2))))
 )
+
+writexl::write_xlsx(data2, "data2.xlsx")
 
 x1 <- c(10.4,10.8,11.1,10.2,10.6,11.3,11.6,11.4,10.7,10.9,11.3,11.4,11.5,11.7)
 y1 <- c(7.4,7.6,7.9,7.2,8.1,8.5,8.7,8.3,7.5,7.4,7.9,8.9,8.8,9.7)
